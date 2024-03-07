@@ -413,6 +413,7 @@ body.dark-theme{
 .home__img{
   position: relative;
   z-index: 10;
+  border-radius: 8px;
 }
 
 .home__shadow{
@@ -734,6 +735,78 @@ body.dark-theme{
   margin-bottom: 1.25rem;
 }
 
+
+/* skills  */
+
+.section__title-2 {
+  text-align: center; /* Aligns the title to the center */
+  margin-bottom: 2rem; /* Adds margin to the bottom of the title */
+}
+
+
+
+.skill__button {
+  padding: 5rem; /* Adds padding to the buttons */
+  background-color: var(--button-color); /* Sets the background color of the buttons */
+  color: #fff; /* Sets the text color of the buttons */
+  border: none; /* Removes border */
+  justify-content: initial;
+  /* border-radius: 5px;  */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: background-color 0.3s; /* Adds transition effect for background color */
+}
+
+.skill__button:hover {
+  background-color: var(--button-hover-color); /* Changes background color on hover */
+}
+
+
+
+
+
+/* //
+
+*/
+
+
+
+.skills {
+  text-align: center;
+  margin-bottom: 2rem; /* Add margin at the bottom for spacing */
+}
+
+.skills__heading {
+  font-size: 1.5rem; /* Adjust heading font size */
+  margin-bottom: 1rem; /* Add margin below heading */
+}
+
+.skills__container {
+  display: grid; /* Use CSS Grid for flexible layout */
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); /* Automatically adjust columns based on container width */
+  gap: 2rem; /* Add gap between skills */
+  justify-content: center;
+  margin: 4rem;
+}
+
+.skill {
+  padding: 0.5rem 1rem;
+  background-color: #840720; /* Set background color for skills */
+  color: #fff; /* Set text color */
+  border-radius: 5px; /* Add border radius */
+  cursor: pointer;
+  transition: background-color 0.3s; /* Add transition effect */
+}
+
+.skill:hover {
+  background-color: #F1AD17; /* Change background color on hover */
+}
+
+@media (max-width: 768px) {
+  .skills__container {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Adjust column width for smaller screens */
+      margin: 2rem;
+  }
+}
 /*=============== PROJECTS ===============*/
 .projects{
   background-color: var(--container-color);
